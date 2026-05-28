@@ -34,16 +34,18 @@ def initial_connected_graph(n=10, p=0.4):
         if nx.is_connected(G):
             return G
 
+def invalidate_conjecture(conjecture_path: str, max_iterations: int = 20000):
 
-if __name__ == "__main__":
-    with open("data/false_conjectures/HDR-001.json") as f:
+    with open(conjecture_path) as f:
         conjecture = json.load(f)
 
-    G = initial_connected_graph(n=10, p=0.8)
+    G = initial_connected_graph(n=5, p=0.8)
+
     best_result = verify_counterexample(conjecture, G)
     best_score = violation_score(best_result)
 
-    for i in range(20000):
+    for i in range(max_iterations):
+
         candidate = mutate_graph(G)
 
         if not nx.is_connected(candidate):
@@ -58,13 +60,30 @@ if __name__ == "__main__":
             best_result = result
 
         if result["violated"]:
-            print("COUNTEREXAMPLE FOUND")
-            print("iteration:", i)
-            print(result)
-            g6 = nx.to_graph6_bytes(candidate, header=False).decode().strip()
-            print("graph6:", g6)
-            break
-    else:
-        print("No counterexample found")
-        print("best score:", best_score)
-        print(best_result)
+
+            g6 = nx.to_graph6_bytes(
+                candidate,
+                header=False
+            ).decode().strip()
+
+            return {
+                "status": "counterexample_found",
+                "iteration": i,
+                "conjecture_id": result["conjecture_id"],
+                "graph6": g6,
+                "result": result,
+            }
+
+    return {
+        "status": "no_counterexample_found",
+        "best_score": best_score,
+        "best_result": best_result,
+    }
+
+if __name__ == "__main__":
+
+    result = invalidate_conjecture(
+        "data/false_conjectures/HDR-001.json"
+    )
+
+    print(result)
