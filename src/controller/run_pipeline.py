@@ -7,6 +7,9 @@ from src.mcp_invalidator.server import invalidate
 CONJECTURES = [
     "HDR-001",
     "HDR-002",
+    "HDR-003",
+    "HDR-004",
+    "HDR-005",
 ]
 
 MAX_ITERATIONS = 20000

@@ -1,7 +1,7 @@
 {
   "HDR-001": {
     "status": "counterexample_found",
-    "iteration": 10,
+    "iteration": 24,
     "graph6": "D~{",
     "counterexample_file": "data/counterexamples/HDR-001.g6",
     "verification": {
@@ -17,11 +17,53 @@
         "m": 10,
         "avg": 4.0,
         "delta": 4,
-        "Delta": 4
+        "Delta": 4,
+        "kappa": 4,
+        "edge_kappa": 4,
+        "gamma": 1
       }
     }
   },
   "HDR-002": {
+    "status": "no_counterexample_found",
+    "iteration": null,
+    "graph6": null,
+    "counterexample_file": "",
+    "verification": {}
+  },
+  "HDR-003": {
+    "status": "no_counterexample_found",
+    "iteration": null,
+    "graph6": null,
+    "counterexample_file": "",
+    "verification": {}
+  },
+  "HDR-004": {
+    "status": "counterexample_found",
+    "iteration": 0,
+    "graph6": "Dxw",
+    "counterexample_file": "data/counterexamples/HDR-004.g6",
+    "verification": {
+      "conjecture_id": "HDR-004",
+      "left_value": 1,
+      "right_value": 1.0000000000000002,
+      "violated": true,
+      "invariants": {
+        "density": 0.7,
+        "rad": 1,
+        "diam": 2,
+        "n": 5,
+        "m": 7,
+        "avg": 2.8,
+        "delta": 1,
+        "Delta": 4,
+        "kappa": 1,
+        "edge_kappa": 1,
+        "gamma": 1
+      }
+    }
+  },
+  "HDR-005": {
     "status": "no_counterexample_found",
     "iteration": null,
     "graph6": null,
