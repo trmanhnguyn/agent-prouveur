@@ -1,10 +1,25 @@
 {
   "HDR-001": {
-    "status": "no_counterexample_found",
-    "iteration": null,
-    "graph6": null,
-    "counterexample_file": "",
-    "verification": {}
+    "status": "counterexample_found",
+    "iteration": 10,
+    "graph6": "D~{",
+    "counterexample_file": "data/counterexamples/HDR-001.g6",
+    "verification": {
+      "conjecture_id": "HDR-001",
+      "left_value": 1.0,
+      "right_value": 0.9989145300280166,
+      "violated": true,
+      "invariants": {
+        "density": 1.0,
+        "rad": 1,
+        "diam": 1,
+        "n": 5,
+        "m": 10,
+        "avg": 4.0,
+        "delta": 4,
+        "Delta": 4
+      }
+    }
   },
   "HDR-002": {
     "status": "no_counterexample_found",
