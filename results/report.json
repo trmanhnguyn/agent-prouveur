@@ -1,0 +1,16 @@
+{
+  "HDR-001": {
+    "status": "no_counterexample_found",
+    "iteration": null,
+    "graph6": null,
+    "counterexample_file": "",
+    "verification": {}
+  },
+  "HDR-002": {
+    "status": "no_counterexample_found",
+    "iteration": null,
+    "graph6": null,
+    "counterexample_file": "",
+    "verification": {}
+  }
+}
