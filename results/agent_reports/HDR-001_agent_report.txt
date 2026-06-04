@@ -1,0 +1,31 @@
+Agent report for HDR-001
+
+Status: counterexample found.
+
+The invalidator found a graph encoded in graph6 format:
+
+D~{
+
+The independent verifier computed:
+
+left_value = 1.0
+right_value = 0.9989145300280166
+violated = True
+
+Graph invariants:
+{
+  "density": 1.0,
+  "rad": 1,
+  "diam": 1,
+  "n": 5,
+  "m": 10,
+  "avg": 4.0,
+  "delta": 4,
+  "Delta": 4,
+  "kappa": 4,
+  "edge_kappa": 4,
+  "gamma": 1
+}
+
+Conclusion:
+The conjecture is invalidated because the generated graph satisfies the graph class constraints and violates the inequality.
