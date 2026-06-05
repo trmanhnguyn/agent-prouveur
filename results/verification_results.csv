@@ -1,6 +1,6 @@
 id,status,iteration,graph6,counterexample_file,left_value,right_value,violated,n,m,density,rad,diam,avg,delta,Delta
-HDR-001,counterexample_found,24,D~{,data/counterexamples/HDR-001.g6,1.0,0.9989145300280166,True,5,10,1.0,1,1,4.0,4,4
-HDR-002,no_counterexample_found,,,,,,,,,,,,,,
+HDR-001,counterexample_found,13,Bw,data/counterexamples/HDR-001.g6,1.0,0.9989145300280166,True,3,3,1.0,1,1,2.0,2,2
+HDR-002,counterexample_found,50,J~~~|~k~gI_,data/counterexamples/HDR-002.g6,7.818181818181818,7.743928980526919,True,11,43,0.7818181818181819,1,2,7.818181818181818,3,10
 HDR-003,no_counterexample_found,,,,,,,,,,,,,,
-HDR-004,counterexample_found,0,Dxw,data/counterexamples/HDR-004.g6,1,1.0000000000000002,True,5,7,0.7,1,2,2.8,1,4
+HDR-004,counterexample_found,2,In|AA@?O?,data/counterexamples/HDR-004.g6,1,1.0000000000000002,True,10,14,0.3111111111111111,1,2,2.8,1,9
 HDR-005,no_counterexample_found,,,,,,,,,,,,,,

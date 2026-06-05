@@ -1,8 +1,8 @@
 {
   "HDR-001": {
     "status": "counterexample_found",
-    "iteration": 24,
-    "graph6": "D~{",
+    "iteration": 13,
+    "graph6": "Bw",
     "counterexample_file": "data/counterexamples/HDR-001.g6",
     "verification": {
       "conjecture_id": "HDR-001",
@@ -13,23 +13,43 @@
         "density": 1.0,
         "rad": 1,
         "diam": 1,
-        "n": 5,
-        "m": 10,
-        "avg": 4.0,
-        "delta": 4,
-        "Delta": 4,
-        "kappa": 4,
-        "edge_kappa": 4,
+        "n": 3,
+        "m": 3,
+        "avg": 2.0,
+        "delta": 2,
+        "Delta": 2,
+        "kappa": 2,
+        "edge_kappa": 2,
         "gamma": 1
-      }
+      },
+      "relation": "<="
     }
   },
   "HDR-002": {
-    "status": "no_counterexample_found",
-    "iteration": null,
-    "graph6": null,
-    "counterexample_file": "",
-    "verification": {}
+    "status": "counterexample_found",
+    "iteration": 50,
+    "graph6": "J~~~|~k~gI_",
+    "counterexample_file": "data/counterexamples/HDR-002.g6",
+    "verification": {
+      "conjecture_id": "HDR-002",
+      "left_value": 7.818181818181818,
+      "right_value": 7.743928980526919,
+      "violated": true,
+      "invariants": {
+        "density": 0.7818181818181819,
+        "rad": 1,
+        "diam": 2,
+        "n": 11,
+        "m": 43,
+        "avg": 7.818181818181818,
+        "delta": 3,
+        "Delta": 10,
+        "kappa": 3,
+        "edge_kappa": 3,
+        "gamma": 1
+      },
+      "relation": "<="
+    }
   },
   "HDR-003": {
     "status": "no_counterexample_found",
@@ -40,8 +60,8 @@
   },
   "HDR-004": {
     "status": "counterexample_found",
-    "iteration": 0,
-    "graph6": "Dxw",
+    "iteration": 2,
+    "graph6": "In|AA@?O?",
     "counterexample_file": "data/counterexamples/HDR-004.g6",
     "verification": {
       "conjecture_id": "HDR-004",
@@ -49,18 +69,19 @@
       "right_value": 1.0000000000000002,
       "violated": true,
       "invariants": {
-        "density": 0.7,
+        "density": 0.3111111111111111,
         "rad": 1,
         "diam": 2,
-        "n": 5,
-        "m": 7,
+        "n": 10,
+        "m": 14,
         "avg": 2.8,
         "delta": 1,
-        "Delta": 4,
+        "Delta": 9,
         "kappa": 1,
         "edge_kappa": 1,
         "gamma": 1
-      }
+      },
+      "relation": ">="
     }
   },
   "HDR-005": {
