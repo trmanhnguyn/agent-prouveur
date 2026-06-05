@@ -12,13 +12,21 @@ mcp = FastMCP("Graph Conjecture Invalidator")
 
 
 @mcp.tool()
-def invalidate(conjecture_id: str, max_iterations: int = 20000) -> dict:
+def invalidate(
+    conjecture_id: str,
+    max_iterations: int = 20000,
+    mutation_strategy: str = "mixed",
+) -> dict:
     """
     Try to find a counterexample for a graph theory conjecture.
 
     Args:
         conjecture_id: Example "HDR-001"
         max_iterations: Maximum number of local search iterations
+        mutation_strategy:
+            - "edge_only": only add/remove edges
+            - "structured": only structured mutations
+            - "mixed": edge + structured mutations
 
     Returns:
         A dictionary containing the status, counterexample if found, and verification result.
@@ -34,6 +42,7 @@ def invalidate(conjecture_id: str, max_iterations: int = 20000) -> dict:
     return invalidate_conjecture(
         conjecture_path=conjecture_path,
         max_iterations=max_iterations,
+        mutation_strategy=mutation_strategy,
     )
 
 

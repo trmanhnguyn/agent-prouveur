@@ -1,0 +1,11 @@
+conjecture_id,strategy,status,attempt,iteration,best_score,graph6
+HDR-001,edge_only,counterexample_found,1,7,,D~{
+HDR-001,mixed,counterexample_found,1,2,,D~{
+HDR-002,edge_only,no_counterexample_found,5,,-4.132416953035509,
+HDR-002,mixed,counterexample_found,3,87,,I~~~~|@~o
+HDR-003,edge_only,no_counterexample_found,5,,-3,
+HDR-003,mixed,no_counterexample_found,5,,-3,
+HDR-004,edge_only,counterexample_found,1,6,,Dw{
+HDR-004,mixed,counterexample_found,1,4,,Cy
+HDR-005,edge_only,no_counterexample_found,5,,0.0,
+HDR-005,mixed,no_counterexample_found,5,,0.0,
