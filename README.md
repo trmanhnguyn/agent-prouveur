@@ -201,4 +201,3 @@ Les prochaines étapes du projet incluent :
 Encadrement :
 
 * François Delbot
-* Thibault Anani
